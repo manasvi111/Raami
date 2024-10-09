@@ -1,20 +1,6 @@
-.marquee{
-    position: relative; 
-    width: 100%;
-    background-color: var(--clr-marquee);
-    text-transform: uppercase;
-    white-space: nowrap;
-    overflow: hidden;
-    z-index: 1000;
-    top: 0;
-  }
-  .marquee div{
-    font-family: var(--ff-lato);
-    color: var(--clr-universal);
-    font-size: 25px;
-    animation: animate 30s linear infinite;
-    padding-left: 100% ;
-    display: inline-block;
-    height: 100%;
-    align-items: center;
-  }
+#hero {
+    background-color: #f8c8dc; /* Soft pastel pink */
+    color: white; /* White text for contrast */
+    padding: 5rem 0;
+    text-align: center;
+}
