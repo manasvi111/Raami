@@ -1,6 +1,5 @@
 <!-- Features Section -->
-<button class="btn btn-primary btn-lg m-2">Get Started</button>
-            <button class="btn btn-outline-light btn-lg m-2">Learn More</button>    
+   
 
 <section id="features" class="py-5 bg-light">
         <div class="container text-center">
