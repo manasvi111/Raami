@@ -1,3 +1,5 @@
+/****************Hero Section********************/
+/* Heading and tagline Styles */
 #hero {
     background-color: #f7e7ce; /* Soft pastel pink */
     color: #5c4033; /* White text for contrast */
@@ -12,4 +14,32 @@
 #hero p {
     font-size: 1.25rem;
     margin-top: 1rem;
+}
+/* CTA Button Styles */
+.custom-cta {
+    background-color: #5c4033; 
+    color: #ffffff; 
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease;
+}
+
+.custom-cta:hover {
+    background-color: #4a3127; 
+    color: #f7e7ce; 
+}
+
+/* Outline CTA Button Styles */
+.custom-cta-outline {
+    color: #5c4033; 
+    border: 2px solid #5c4033;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-cta-outline:hover {
+    background-color: #5c4033; 
+    color: #f7e7ce; 
 }
