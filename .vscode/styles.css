@@ -4,3 +4,12 @@
     padding: 5rem 0;
     text-align: center;
 }
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}

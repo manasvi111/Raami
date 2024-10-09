@@ -1,0 +1,106 @@
+<!-- Features Section -->
+<button class="btn btn-primary btn-lg m-2">Get Started</button>
+            <button class="btn btn-outline-light btn-lg m-2">Learn More</button>    
+
+<section id="features" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5">Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Vendor Directory</h3>
+                            <p class="card-text">Connect with the best vendors in your area.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Task Management</h3>
+                            <p class="card-text">Stay organized with our detailed task list.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title">Budget Planner</h3>
+                            <p class="card-text">Keep your wedding budget under control.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">How It Works</h2>
+            <ol class="list-group list-group-numbered">
+                <li class="list-group-item">Sign Up: Create your free Raami account.</li>
+                <li class="list-group-item">Plan Your Wedding: Manage your tasks, vendors, and budget all in one place.</li>
+                <li class="list-group-item">Celebrate: Enjoy your dream wedding with everything perfectly in place.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-5">What Our Users Say</h2>
+            <blockquote class="blockquote">
+                <p class="mb-0">Raami made our wedding planning stress-free and enjoyable!</p>
+                <footer class="blockquote-footer">User Name</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Vendor Section -->
+    <section id="vendor" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Grow Your Business with Raami</h2>
+            <p>Get discovered by couples near you.</p>
+            <button class="btn btn-primary btn-lg">Join as a Vendor</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 Raami. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    css: /* Hero Section Styling */
+
+    
+   
+    
+    /* Button Styling */
+    .cta-btn {
+        background-color: white;
+        color: #f8c8dc;
+        border: 2px solid white;
+        padding: 0.75rem 1.5rem;
+        margin: 1rem 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    .cta-btn:hover {
+        background-color: #f8c8dc;
+        color: white;
+        border-color: #f8c8dc;
+    }
+    
+    /* Container Styling */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
