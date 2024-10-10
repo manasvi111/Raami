@@ -1,3 +1,36 @@
+/****************Header Section********************/
+header {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #5c4033; /* Customize the logo color */
+}
+
+.nav-link {
+    color: #5c4033; /* Link color */
+    margin: 0 1.5rem;
+    font-size: 1rem; /* Font size for links */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Button styles */
+.btn-outline-secondary {
+    color: #5c4033; /* Text color */
+    border-color: #5c4033; /* Border color */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #5c4033; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
 /****************Hero Section********************/
 /* Heading and tagline Styles */
 #hero {
