@@ -1,7 +1,9 @@
 /****************Header Section********************/
 header {
-    background-color: #ffffff; /* White background */
+    background-color: white !important; /* White background */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000; /* Ensure it's on top of all elements */
 }
 
 .logo {
@@ -116,3 +118,52 @@ header {
     background-color: #5c4033;
     color: #f7e7ce;
 }
+/**************** Plan Your Wedding Section ********************/
+
+#features {
+    padding: 5rem 0;
+    background-color: #f7e7ce; /* Match the color theme */
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    color: #5c4033; /* Match the theme */
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Elevation on hover */
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #5c4033; /* Title color */
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.125rem;
+    color: #5c4033;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Add hover effect to the card text */
+.card:hover .card-title, .card:hover .card-text {
+    color: #4a3127; /* Darker color on hover */
+}
+
