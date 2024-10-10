@@ -58,6 +58,19 @@ header {
     align-items: center;
 }
 
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.5rem;  /* Slightly increase the font size */
+    font-weight: 500;   /* Make the font medium bold */
+    line-height: 1.6;   /* Increase line height for better readability */
+    margin-top: 1rem;
+    color: #5c4033;
+}
+
 .bg-video {
     position: absolute;
     top: 50%;
@@ -72,9 +85,9 @@ header {
 }
 
 .container {
-    position: relative; /* Keep content on top of video */
-    z-index: 1; /* Ensure content stays above video */
-    color: #5c4033; /* Text color that contrasts with the video */
+    position: relative; 
+    z-index: 1; 
+    color: #5c4033; 
 }
 
 .custom-cta {
