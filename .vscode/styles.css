@@ -50,45 +50,56 @@ header {
 /****************Hero Section********************/
 /* Heading and tagline Styles */
 #hero {
-    background-color: #f7e7ce; /* Soft pastel pink */
-    color: #5c4033; /* White text for contrast */
-    padding: 5rem 0;
-    text-align: center;
-}
-#hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    height: 80vh; /* Set height to viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#hero p {
-    font-size: 1.25rem;
-    margin-top: 1rem;
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
-/* CTA Button Styles */
+
+.container {
+    position: relative; /* Keep content on top of video */
+    z-index: 1; /* Ensure content stays above video */
+    color: #5c4033; /* Text color that contrasts with the video */
+}
+
 .custom-cta {
-    background-color: #5c4033; 
-    color: #ffffff; 
+    background-color: #5c4033;
+    color: #ffffff;
     border: none;
     padding: 0.75rem 1.5rem;
-    border-radius: 30px; 
+    border-radius: 30px;
     transition: background-color 0.3s ease;
 }
 
 .custom-cta:hover {
-    background-color: #4a3127; 
-    color: #f7e7ce; 
+    background-color: #4a3127;
+    color: #f7e7ce;
 }
 
-/* Outline CTA Button Styles */
 .custom-cta-outline {
-    color: #5c4033; 
+    color: #5c4033;
     border: 2px solid #5c4033;
     padding: 0.75rem 1.5rem;
-    border-radius: 30px; 
+    border-radius: 30px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-cta-outline:hover {
-    background-color: #5c4033; 
-    color: #f7e7ce; 
+    background-color: #5c4033;
+    color: #f7e7ce;
 }
