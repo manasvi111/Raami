@@ -21,6 +21,15 @@ header {
 }
 
 /* Button styles */
+.btn-outline-primary {
+    color: #5c4033; /* Text color */
+    border-color: #5c4033; /* Border color */
+}
+
+.btn-outline-primary:hover {
+    background-color: #5c4033; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
 .btn-outline-secondary {
     color: #5c4033; /* Text color */
     border-color: #5c4033; /* Border color */
