@@ -13,7 +13,7 @@ header {
 .nav-link {
     color: #5c4033; /* Link color */
     margin: 0 1.5rem;
-    font-size: 1rem; /* Font size for links */
+    font-size: 20px; /* Font size for links */
 }
 
 .nav-link:hover {
@@ -22,22 +22,29 @@ header {
 
 /* Button styles */
 .btn-outline-primary {
-    color: #5c4033; /* Text color */
-    border-color: #5c4033; /* Border color */
+    background-color: #5c4033; 
+    color: #ffffff; 
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease;
 }
 
 .btn-outline-primary:hover {
-    background-color: #5c4033; /* Background color on hover */
-    color: #ffffff; /* Text color on hover */
+    background-color: #4a3127; 
+    color: #f7e7ce; 
 }
 .btn-outline-secondary {
-    color: #5c4033; /* Text color */
-    border-color: #5c4033; /* Border color */
+    color: #5c4033; 
+    border: 2px solid #5c4033;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-outline-secondary:hover {
-    background-color: #5c4033; /* Background color on hover */
-    color: #ffffff; /* Text color on hover */
+    background-color: #5c4033; 
+    color: #f7e7ce; 
 }
 
 /****************Hero Section********************/
