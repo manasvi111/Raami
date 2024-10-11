@@ -167,3 +167,21 @@ header {
     color: #4a3127; /* Darker color on hover */
 }
 
+.vendors-section {
+    background-color: #f7e7ce; /* You can adjust this to match the site’s theme */
+}
+
+.vendor-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vendor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-card img {
+    max-height: 150px;
+    border-radius: 8px;
+}
