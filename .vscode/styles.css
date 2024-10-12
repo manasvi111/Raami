@@ -239,6 +239,7 @@ header {
 /************Testimonials*****************/
 #testimonials {
     background-color: #f5f0e6; 
+    padding: 4rem 0;
   }
   
   #testimonials h2 {
@@ -246,36 +247,21 @@ header {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 3rem;
+  } 
+  
+  blockquote {
+    font-size: 1.5rem;
+    color: #5c4033;
   }
   
-  .testimonial-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    padding: 2rem;
-    height: 100%; /* Ensures equal height for all cards */
-  }
-  
-  .testimonial-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Slight lift effect */
-  }
-  
-  .testimonial-card img {
-    border-radius: 50%; /* Makes the images circular */
-    border: 3px solid #5c4033; /* Border around client images */
-  }
-  
-  .testimonial-card h5 {
-    color: #5c4033; /* Name color matching the theme */
+  .blockquote-footer {
+    color: #4a3127;
     font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
   }
   
-  .testimonial-card p {
-    font-size: 1rem;
-    color: #5c4033; /* Text color for testimonial */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #5c4033; /* Customize the arrows */
   }
+  
   
