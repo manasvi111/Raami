@@ -10,22 +10,7 @@
 </head>
 <body>
 <!-- Header Section -->
-<header class=" shadow-sm py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-        <div class="logo">Raami</div>
-        <nav class="d-flex flex-grow-1 justify-content-center">
-            <a href="#vendors" class="nav-link">Vendor directory</a>
-            <a href="#features" class="nav-link">Services</a>
-            <a href="#how-it-works" class="nav-link">Resources</a>
-            <a href="#testimonials" class="nav-link">About Us</a>
-            <a href="contact.html" class="nav-link">Contact Us</a>
-        </nav>
-        <div>
-            <button class="btn btn-outline-primary">Login</button>
-            <button class="btn btn-outline-secondary">Sign Up</button>
-        </div>
-    </div>
-</header>
+<?php include 'header.php'; ?>
 <!-- Contact Us Section -->
 <section id="contact" class="contact-section py-5">
     <div class="container">
@@ -71,48 +56,7 @@
 </section>
 
 <!--Footer-->
-<footer class="footer-section">
-    <div class="container py-5">
-      <div class="row">
-        <!-- About Section -->
-        <div class="col-md-4 mb-4">
-          <h5>About Raami</h5>
-          <p class="text-muted">Raami helps you plan the wedding of your dreams, stress-free. From finding the perfect vendors to organizing your big day, we've got you covered.</p>
-        </div>
-        <!-- Navigation Links -->
-        <div class="col-md-4 mb-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-muted">Home</a></li>
-            <li><a href="#" class="text-muted">Services</a></li>
-            <li><a href="#" class="text-muted">Vendors</a></li>
-            <li><a href="#" class="text-muted">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Contact Info -->
-        <div class="col-md-4 mb-4">
-          <h5>Contact Us</h5>
-          <p class="text-muted">123 Wedding Street, City, Country</p>
-          <p class="text-muted">Email: info@raami.com</p>
-          <p class="text-muted">Phone: +1 (234) 567-890</p>
-        </div>
-      </div>
-      <!-- Social Media Links -->
-      <div class="row">
-        <div class="col text-center">
-          <a href="#" class="text-muted mx-2"><i class="fab fa-facebook fa-lg"></i></a>
-          <a href="#" class="text-muted mx-2"><i class="fab fa-twitter fa-lg"></i></a>
-          <a href="#" class="text-muted mx-2"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="#" class="text-muted mx-2"><i class="fab fa-linkedin fa-lg"></i></a>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col text-center">
-          <p class="text-muted">&copy; 2024 Raami. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+<?php include 'footer.php' ?>    
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
