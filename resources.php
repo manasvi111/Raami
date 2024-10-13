@@ -10,6 +10,15 @@
 <body>
 
 <?php include 'header.php'; ?> <!-- Including the header -->
+<!-- Hero Section -->
+<section id="resources-hero" class="py-5 text-center bg-light">
+    <div class="container">
+        <h1 class="mb-3">Wedding Planning Resources</h1>
+        <p class="lead">Your go-to guide for everything wedding-related — from tips and trends to expert advice.</p>
+    </div>
+</section>
+
+
 
 <?php include 'footer.php'; ?> <!-- Including the footer -->
 
