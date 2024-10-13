@@ -74,6 +74,14 @@
         </div>
     </div>
 </section>
+<!-- Call to Action (Are You a Blogger?) -->
+<section id="cta" class="text-center py-5">
+    <div class="container">
+        <h3 class="mb-4">Are you a blogger?</h3>
+        <p>We'd love to hear your voice! Become a guest blogger on Raami and share your wedding insights and stories with our readers.</p>
+        <a href="contact.php" class="btn btn-outline-secondary">Become a Blogger</a>
+    </div>
+</section>
 
 <?php include 'footer.php'; ?> <!-- Including the footer -->
 

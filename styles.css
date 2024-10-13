@@ -449,6 +449,35 @@ header {
     object-fit: cover;
 }
 
+/* Call to Action (Are You a Blogger?) */
+#cta {
+    background-color: #5c4033;
+    color: #f7e7ce;
+}
+
+#cta h3 {
+    color: #f7e7ce;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#cta p {
+    color: #f7e7ce;
+    font-size: 1.25rem;
+}
+
+#cta a {
+    background-color: #f7e7ce;
+    color: #5c4033;
+    border-color: #f7e7ce;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#cta a:hover {
+    background-color: #fff7e9;
+    color: #5c4033;
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
     /*Contact us page*/
@@ -470,5 +499,9 @@ header {
     .team-section .rounded-circle {
         width: 100px;
         height: 100px;
+    }
+    /*Resources Page*/
+    .card img {
+        height: 150px;
     }
 }
