@@ -137,7 +137,8 @@
         <div class="container text-center">
         <h2 class="mb-5">
             <a href="about.php" style="text-decoration: none; color: inherit;">What Our Clients Say</a>
-        </h2>
+        </h2> 
+        
           <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <!-- Testimonial 1 -->
