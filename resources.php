@@ -55,7 +55,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Trends and Inspiration</h5>
                         <p class="card-text">Discover the latest wedding trends, from bridal fashion to décor, and get inspired for your dream wedding.</p>
-                        <a href="blog-details.php" class="btn btn-outline-primary">Read more</a>
+                        <a href="trendsInspiration.php" class="btn btn-outline-primary">Read more</a>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@
                     <div class="card-body">
                         <h5 class="card-title">User Testimonials</h5>
                         <p class="card-text">Hear from real couples who’ve planned their weddings using Raami, sharing their stories and experiences.</p>
-                        <a href="blog-details.php" class="btn btn-outline-primary">Read more</a>
+                        <a href="user-testimonials.php" class="btn btn-outline-primary">Read more</a>
                     </div>
                 </div>
             </div>
