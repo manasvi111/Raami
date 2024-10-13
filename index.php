@@ -100,7 +100,7 @@
             </div>
         </div>
     </section>
-    <!-- Features Section -->
+    <!-- Services Section -->
     <section id="features" class="py-5">
         <div class="container text-center">
             <h2 class="mb-5">Plan your wedding</h2>
@@ -135,7 +135,9 @@
     <!--Testimonials-->
     <section id="testimonials" class="py-5">
         <div class="container text-center">
-          <h2 class="mb-5">What Our Clients Say</h2>
+        <h2 class="mb-5">
+            <a href="about.php" style="text-decoration: none; color: inherit;">What Our Clients Say</a>
+        </h2>
           <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <!-- Testimonial 1 -->

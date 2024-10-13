@@ -358,13 +358,74 @@ header {
     color: #4a3127;
 }
 
+/*****************About Us page*********************/
+/* General Styling for Sections */
+.about-us-section,
+.mission-section,
+.team-section,
+.brand-story-section {
+    padding: 4rem 0;
+}
+
+.about-us-section h2,
+.mission-section h3,
+.team-section h3,
+.brand-story-section h3 {
+    color: #5c4033; /* Main theme color */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-us-section p,
+.mission-section p,
+.team-section p,
+.brand-story-section p {
+    color: #5c4033;
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+/* Team Section Styling */
+.team-section .rounded-circle {
+    border: 5px solid #5c4033; /* Border for team member images */
+}
+
+.team-section h5 {
+    color: #5c4033;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.team-section p {
+    font-size: 1rem;
+    color: #5c4033;
+}
+
+.bg-light {
+    background-color: #f7e7ce !important; /* Light background matches the theme */
+}
+
+
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
+    /*Contact us page*/
     .contact-section {
         padding: 3rem 1.5rem;
     }
 
     .form-control {
         margin-bottom: 1rem;
+    }
+    /*About us page*/
+    .about-us-section,
+    .mission-section,
+    .team-section,
+    .brand-story-section {
+        padding: 2rem 1rem;
+    }
+    
+    .team-section .rounded-circle {
+        width: 100px;
+        height: 100px;
     }
 }
