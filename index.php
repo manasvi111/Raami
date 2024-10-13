@@ -28,12 +28,12 @@
             <a href="contact.php" class="nav-link">Contact Us</a>
         </nav>
         <div>
-            <button class="btn btn-outline-primary">Login</button>
-            <button class="btn btn-outline-secondary">Sign Up</button>
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
         </div>
     </div>
 </header>
-
+<?php include 'modals.php'; ?>
     <!-- Hero Section -->
     <section id="hero" class="py-5 text-center">
         <video autoplay muted loop class="bg-video">

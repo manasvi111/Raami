@@ -476,6 +476,80 @@ header {
     color: #5c4033;
 }
 
+/*****************Login and sign up modals************************/
+/* Modal Styles */
+.modal-header {
+    background-color: #5c4033; /* Brown theme for header */
+    color: #f7e7ce; /* Light cream color for text */
+    border-bottom: none; /* Remove default border */
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f7e7ce; /* Title color to match the theme */
+}
+
+.modal-header .btn-close {
+    background-color: #f7e7ce; /* Light cream color for close button */
+    border: none;
+}
+
+.modal-body {
+    background-color: #fffaf0; /* Soft cream background */
+    color: #5c4033; /* Brown text color */
+}
+
+.modal-footer {
+    background-color: #f7e7ce; /* Light cream color */
+    border-top: none; /* Remove top border */
+    text-align: center; /* Center the footer text */
+}
+
+/* Buttons */
+.modal-footer .btn {
+    background-color: #5c4033; /* Brown button background */
+    color: #ffffff; /* White text */
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn:hover {
+    background-color: #4a3127; /* Darker brown on hover */
+}
+
+/* Form Inputs */
+.modal-body .form-control {
+    background-color: #f7e7ce; /* Light cream input fields */
+    border: 1px solid #5c4033; /* Brown border */
+    color: #5c4033; /* Brown text */
+}
+
+.modal-body .form-control:focus {
+    background-color: #fffaf0; /* Softer cream focus state */
+    border-color: #5c4033; /* Brown border focus */
+    box-shadow: none;
+}
+
+.modal-footer p {
+    color: #5c4033; /* Brown text for footer links */
+}
+
+.modal-footer a {
+    color: #5c4033; /* Brown color for links */
+}
+
+.modal-footer a:hover {
+    color: #4a3127; /* Darker brown hover for links */
+    text-decoration: underline;
+}
+.modal-body form .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
     /*Contact us page*/
