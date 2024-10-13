@@ -10,6 +10,7 @@
 <body>
 
 <?php include 'header.php'; ?> <!-- Including the header -->
+
 <!-- Hero Section -->
 <section id="resources-hero" class="py-5 text-center bg-light">
     <div class="container">
@@ -30,7 +31,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Wedding Planning Tips</h5>
                         <p class="card-text">Expert advice and guides to help you plan every detail of your big day, from budget management to timelines.</p>
-                        <a href="blog-details.php" class="btn btn-outline-primary">Read more</a>
+                        <a href="weddingPlanningTips.php" class="btn btn-outline-primary">Read more</a>
                     </div>
                 </div>
             </div>
@@ -74,6 +75,7 @@
         </div>
     </div>
 </section>
+
 <!-- Call to Action (Are You a Blogger?) -->
 <section id="cta" class="text-center py-5">
     <div class="container">

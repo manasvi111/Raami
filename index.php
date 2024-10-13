@@ -23,7 +23,7 @@
         <nav class="d-flex flex-grow-1 justify-content-center">
             <a href="#vendors" class="nav-link">Vendor directory</a>
             <a href="#features" class="nav-link">Services</a>
-            <a href="#how-it-works" class="nav-link">Resources</a>
+            <a href="resources.php" class="nav-link">Resources</a>
             <a href="#testimonials" class="nav-link">About Us</a>
             <a href="contact.php" class="nav-link">Contact Us</a>
         </nav>
@@ -115,7 +115,7 @@
             </div>
         </div>
     </section>
-    <!-- Services Section -->
+    <!-- Features Section -->
     <section id="features" class="py-5">
         <div class="container text-center">
             <h2 class="mb-5">Plan your wedding</h2>
@@ -152,8 +152,7 @@
         <div class="container text-center">
         <h2 class="mb-5">
             <a href="about.php" style="text-decoration: none; color: inherit;">What Our Clients Say</a>
-        </h2> 
-
+        </h2>
           <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <!-- Testimonial 1 -->

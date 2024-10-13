@@ -357,7 +357,6 @@ header {
 .contact-section a:hover {
     color: #4a3127;
 }
-
 /*****************About Us page*********************/
 /* General Styling for Sections */
 .about-us-section,
@@ -404,7 +403,6 @@ header {
 .bg-light {
     background-color: #f7e7ce !important; /* Light background matches the theme */
 }
-
 /***************Resources Page*****************/
 /* Hero Section */
 #resources-hero {
