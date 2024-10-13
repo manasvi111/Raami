@@ -422,6 +422,33 @@ header {
     font-size: 1.25rem;
 }
 
+/* Card Styling for Blog Sections */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #5c4033;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #5c4033;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
     /*Contact us page*/
