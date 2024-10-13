@@ -43,7 +43,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Vendor Spotlights</h5>
                         <p class="card-text">Meet the top wedding vendors who can make your special day unforgettable, featuring caterers, photographers, and more.</p>
-                        <a href="blog-details.php" class="btn btn-outline-primary">Read more</a>
+                        <a href="vendorSpotlight.php" class="btn btn-outline-primary">Read more</a>
                     </div>
                 </div>
             </div>
