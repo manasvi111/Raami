@@ -507,16 +507,21 @@ header {
 }
 
 /* Buttons */
-.modal-footer .btn {
-    background-color: #5c4033; /* Brown button background */
-    color: #ffffff; /* White text */
-    border-radius: 30px;
+/* Buttons in Modal (Body and Footer) */
+.modal-body .btn, .modal-footer .btn {
+    background-color: #5c4033 !important; /* Brown background */
+    color: #ffffff !important; /* White text */
+    border-radius: 30px; /* Rounded corners */
     padding: 0.75rem 1.5rem;
-    transition: background-color 0.3s ease;
+    text-align: center; /* Center text */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
 }
 
-.modal-footer .btn:hover {
-    background-color: #4a3127; /* Darker brown on hover */
+/* Hover state for the button */
+.modal-body .btn:hover, .modal-footer .btn:hover {
+    background-color: #4a3127 !important; /* Darker brown on hover */
+    color: #ffffff !important; /* Ensure white text remains on hover */
 }
 
 /* Form Inputs */

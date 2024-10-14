@@ -16,7 +16,7 @@
                         <label for="login-password">Password</label>
                         <input type="password" class="form-control" id="login-password" name="password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Login</button>
+                    <button type="submit" class="btn">Login</button>
                 </form>
             </div>
         </div>
@@ -45,7 +45,7 @@
                         <label for="signup-password">Password</label>
                         <input type="password" class="form-control" id="signup-password" name="password" required>
                     </div>
-                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <button type="submit" class="btn">Sign Up</button>
                 </form>
             </div>
         </div>
