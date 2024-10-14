@@ -45,6 +45,13 @@
                         <label for="signup-password">Password</label>
                         <input type="password" class="form-control" id="signup-password" name="password" required>
                     </div>
+                    <div class="mb-3">
+                        <label for="user-type" class="form-label">Register as</label>
+                        <select name="user_type" id="user-type" class="form-control" required>
+                            <option value="couple">Couple</option>
+                            <option value="vendor">Vendor</option>
+                        </select>
+                    </div>
                     <button type="submit" class="btn">Sign Up</button>
                 </form>
             </div>
