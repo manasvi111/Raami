@@ -1,3 +1,7 @@
+<?php
+// Include database connection
+include 'db.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -194,3 +198,6 @@
 </body>
 
 </html>
+<?php
+$conn->close();
+?>

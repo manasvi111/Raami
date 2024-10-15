@@ -47,14 +47,53 @@
                     </div>
                     <div class="mb-3">
                         <label for="user-type" class="form-label">Register as</label>
-                        <select name="user_type" id="user-type" class="form-select" required> <!-- Correct use of form-select -->
+                        <select name="user_type" id="user-type" class="form-select" required>
                             <option value="couple">Couple</option>
                             <option value="vendor">Vendor</option>
                         </select>
                     </div>
+
+                    <div class="mb-3" id="vendor-category" style="display: none;">
+                        <label for="vendor-category-select" class="form-label">Select Vendor Category</label>
+                        <select name="category_id" id="vendor-category-select" class="form-select">
+                            <?php
+                            // Fetch vendor categories from the database
+                            include 'db.php';
+                            $sql = "SELECT * FROM vendor_categories";
+                            $result = $conn->query($sql);
+
+                            if ($result === false) {
+                                // Error in the query
+                                echo '<option value="">Error fetching categories</option>';
+                            } elseif ($result->num_rows > 0) {
+                                // Display categories if available
+                                while ($row = $result->fetch_assoc()) {
+                                    echo '<option value="' . $row['id'] . '">' . $row['category_name'] . '</option>';
+                                }
+                            } else {
+                                // No categories found
+                                echo '<option value="">No categories found</option>';
+                            }
+                            ?>
+                        </select>
+                    </div>
+
                     <button type="submit" class="btn btn-primary">Sign Up</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
+<!-- JavaScript to show/hide category dropdown -->
+<script>
+document.getElementById('user-type').addEventListener('change', function() {
+    var userType = this.value;
+    var categoryDropdown = document.getElementById('vendor-category');
+    if (userType === 'vendor') {
+        categoryDropdown.style.display = 'block'; // Show the category dropdown if vendor is selected
+    } else {
+        categoryDropdown.style.display = 'none'; // Hide the category dropdown if couple is selected
+    }
+});
+</script>
