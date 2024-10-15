@@ -24,7 +24,6 @@
 </div>
 
 <!-- Sign Up Modal -->
-<!-- Sign Up Modal -->
 <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
