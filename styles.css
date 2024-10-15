@@ -477,83 +477,91 @@ header {
 }
 
 /*****************Login and sign up modals************************/
-/* Modal Styles */
+/* Modal Dialog Box Styling */
+.modal-dialog {
+    max-width: 500px; /* Max width for modal */
+    width: 100%;
+    margin: 1.75rem auto; /* Center modal vertically */
+}
+
+/* Modal Content Styling */
+.modal-content {
+    height: auto; /* Let modal height adjust automatically */
+    max-height: calc(100vh - 100px); /* Ensure modal fits within viewport */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+/* Modal Header */
 .modal-header {
-    background-color: #5c4033; /* Brown theme for header */
-    color: #f7e7ce; /* Light cream color for text */
-    border-bottom: none; /* Remove default border */
+    background-color: #5c4033;
+    color: #f7e7ce;
+    border-bottom: none; /* Remove bottom border */
 }
 
-.modal-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #f7e7ce; /* Title color to match the theme */
-}
-
+/* Close Button Styling */
 .modal-header .btn-close {
-    background-color: #f7e7ce; /* Light cream color for close button */
+    background-color: #f7e7ce;
     border: none;
 }
 
+/* Modal Body Styling */
 .modal-body {
-    background-color: #fffaf0; /* Soft cream background */
-    color: #5c4033; /* Brown text color */
+    background-color: #fffaf0;
+    color: #5c4033;
+    padding: 20px;
 }
 
-.modal-footer {
-    background-color: #f7e7ce; /* Light cream color */
-    border-top: none; /* Remove top border */
-    text-align: center; /* Center the footer text */
+/* Form Controls */
+.modal-body .form-control, 
+.modal-body .form-select { /* Add .form-select to handle dropdown */
+    background-color: #f7e7ce;
+    border: 1px solid #5c4033;
+    color: #5c4033;
 }
 
-/* Buttons */
-/* Buttons in Modal (Body and Footer) */
-.modal-body .btn, .modal-footer .btn {
-    background-color: #5c4033 !important; /* Brown background */
-    color: #ffffff !important; /* White text */
-    border-radius: 30px; /* Rounded corners */
-    padding: 0.75rem 1.5rem;
-    text-align: center; /* Center text */
-    border: none; /* Remove border */
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
-}
-
-/* Hover state for the button */
-.modal-body .btn:hover, .modal-footer .btn:hover {
-    background-color: #4a3127 !important; /* Darker brown on hover */
-    color: #ffffff !important; /* Ensure white text remains on hover */
-}
-
-/* Form Inputs */
-.modal-body .form-control {
-    background-color: #f7e7ce; /* Light cream input fields */
-    border: 1px solid #5c4033; /* Brown border */
-    color: #5c4033; /* Brown text */
-}
-
-.modal-body .form-control:focus {
-    background-color: #fffaf0; /* Softer cream focus state */
-    border-color: #5c4033; /* Brown border focus */
+.modal-body .form-control:focus, 
+.modal-body .form-select:focus { /* Add focus state for dropdown */
+    background-color: #fffaf0;
+    border-color: #5c4033;
     box-shadow: none;
 }
 
-.modal-footer p {
-    color: #5c4033; /* Brown text for footer links */
-}
-
-.modal-footer a {
-    color: #5c4033; /* Brown color for links */
-}
-
-.modal-footer a:hover {
-    color: #4a3127; /* Darker brown hover for links */
-    text-decoration: underline;
-}
-.modal-body form .btn {
-    display: block;
-    width: 100%;
+/* Modal Footer */
+.modal-footer {
+    background-color: #f7e7ce;
     text-align: center;
+    border-top: none;
 }
+
+/* Modal Button Styling */
+.modal-body .btn, .modal-footer .btn {
+    background-color: #5c4033 !important;
+    color: #ffffff !important;
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.modal-body .btn:hover, .modal-footer .btn:hover {
+    background-color: #4a3127 !important;
+    color: #ffffff !important;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .modal-dialog {
+        max-width: 90%; /* Use 90% of the screen width on small devices */
+        margin: 1rem auto; /* Adjust the margin */
+    }
+
+    .modal-content {
+        max-height: calc(100vh - 50px); /* Ensure modal fits within the screen height */
+        overflow-y: auto; /* Enable scrolling */
+    }
+}
+
 
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
@@ -581,4 +589,5 @@ header {
     .card img {
         height: 150px;
     }
+    
 }

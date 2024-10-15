@@ -24,6 +24,7 @@
 </div>
 
 <!-- Sign Up Modal -->
+<!-- Sign Up Modal -->
 <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -33,26 +34,26 @@
             </div>
             <div class="modal-body">
                 <form action="signup.php" method="POST">
-                    <div class="form-group">
-                        <label for="signup-name">Full Name</label>
+                    <div class="mb-3">
+                        <label for="signup-name" class="form-label">Full Name</label>
                         <input type="text" class="form-control" id="signup-name" name="name" required>
                     </div>
-                    <div class="form-group">
-                        <label for="signup-email">Email address</label>
+                    <div class="mb-3">
+                        <label for="signup-email" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="signup-email" name="email" required>
                     </div>
-                    <div class="form-group">
-                        <label for="signup-password">Password</label>
+                    <div class="mb-3">
+                        <label for="signup-password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="signup-password" name="password" required>
                     </div>
                     <div class="mb-3">
                         <label for="user-type" class="form-label">Register as</label>
-                        <select name="user_type" id="user-type" class="form-control" required>
+                        <select name="user_type" id="user-type" class="form-select" required> <!-- Correct use of form-select -->
                             <option value="couple">Couple</option>
                             <option value="vendor">Vendor</option>
                         </select>
                     </div>
-                    <button type="submit" class="btn">Sign Up</button>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
                 </form>
             </div>
         </div>
