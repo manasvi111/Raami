@@ -65,7 +65,7 @@ include 'db.php';
                         <img src="Images/weddingphoto.jpg" alt="Photographers" class="img-fluid mb-3" loading="lazy">
                         <h5>Photographers</h5>
                         <p>Browse galleries to find your look.</p>
-                        <a href="vendor-listing.php?category_id=1" class="btn btn-outline-dark">See photographers</a>
+                        <a href="vendor_listing.php?category_id=1" class="btn btn-outline-dark">See photographers</a>
                     </div>
                 </div>
                 <!-- Outdoor Spaces Card -->
@@ -74,7 +74,7 @@ include 'db.php';
                         <img src="Images/decoraters.jpg" alt="Outdoor Spaces" class="img-fluid mb-3" loading="lazy">
                         <h5>Decoraters</h5>
                         <p>See outdoor spaces for your event.</p>
-                        <a href="vendor-listing.php?category_id=4" class="btn btn-outline-dark">See Decoraters</a>
+                        <a href="vendor_listing.php?category_id=4" class="btn btn-outline-dark">See Decoraters</a>
                     </div>
                 </div>
                 <!-- Cakes Card -->
@@ -83,7 +83,7 @@ include 'db.php';
                         <img src="Images/cakes.jpg" alt="Cakes" class="img-fluid mb-3" loading="lazy">
                         <h5>Cakes</h5>
                         <p>Meet bakers and set up tastings.</p>
-                        <a href="vendor-listing.php?category_id=2" class="btn btn-outline-dark">Browse Bakers</a>
+                        <a href="vendor_listing.php?category_id=2" class="btn btn-outline-dark">Browse Bakers</a>
                     </div>
                 </div>
                 <!-- DJs Card -->
@@ -92,7 +92,7 @@ include 'db.php';
                         <img src="Images/DJs.jpg" alt="DJs" class="img-fluid mb-3" loading="lazy">
                         <h5>DJs</h5>
                         <p>Keep your dance floor moving.</p>
-                        <a href="vendor-listing.php?category_id=3" class="btn btn-outline-dark">See DJs</a>
+                        <a href="vendor_listing.php?category_id=3" class="btn btn-outline-dark">See DJs</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -100,7 +100,7 @@ include 'db.php';
                         <img src="Images/caterers.jpg" alt="Venues" class="img-fluid mb-3" loading="lazy">
                         <h5>Caterers</h5>
                         <p>Find the perfect venue for your vibe.</p>
-                        <a href="vendor-listing.php?category_id=7" class="btn btn-outline-dark">Browse Cateres</a>
+                        <a href="vendor_listing.php?category_id=7" class="btn btn-outline-dark">Browse Cateres</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
@@ -108,7 +108,7 @@ include 'db.php';
                         <img src="Images/beauty.jpg" alt="Venues" class="img-fluid mb-3" loading="lazy">
                         <h5>Beauty</h5>
                         <p>Find the perfect venue for your vibe.</p>
-                        <a href="vendor-listing.php?category_id=6" class="btn btn-outline-dark">Browse more</a>
+                        <a href="vendor_listing.php?category_id=6" class="btn btn-outline-dark">Browse more</a>
                     </div>
                 </div>
             </div>
