@@ -549,20 +549,6 @@ header {
     color: #ffffff !important;
 }
 
-/* Mobile Responsive Adjustments */
-@media (max-width: 768px) {
-    .modal-dialog {
-        max-width: 90%; /* Use 90% of the screen width on small devices */
-        margin: 1rem auto; /* Adjust the margin */
-    }
-
-    .modal-content {
-        max-height: calc(100vh - 50px); /* Ensure modal fits within the screen height */
-        overflow-y: auto; /* Enable scrolling */
-    }
-}
-
-
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
     /*Contact us page*/
@@ -589,5 +575,14 @@ header {
     .card img {
         height: 150px;
     }
-    
+    /*Modal Dialog*/
+    .modal-dialog {
+        max-width: 90%; /* Use 90% of the screen width on small devices */
+        margin: 1rem auto; /* Adjust the margin */
+    }
+
+    .modal-content {
+        max-height: calc(100vh - 50px); /* Ensure modal fits within the screen height */
+        overflow-y: auto; /* Enable scrolling */
+    }
 }
