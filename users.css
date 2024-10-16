@@ -83,3 +83,9 @@ ul.list-group li {
     color: #fff;
     position: relative;
 }
+.completed-task {
+    text-decoration: line-through;
+    color: #999;
+    pointer-events: none;
+    opacity: 0.7;
+}
