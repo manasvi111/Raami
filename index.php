@@ -122,7 +122,7 @@ include 'db.php';
             <h2 class="mb-5">Plan your wedding</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
                         <div class="card-body">
                             <h3 class="card-title">Budget Planner</h3>
                             <p class="card-text">Keep your wedding budget under control.</p>
@@ -130,7 +130,7 @@ include 'db.php';
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
                         <div class="card-body">
                             <h3 class="card-title">Task Management</h3>
                             <p class="card-text">Stay organized with our detailed task list.</p>
@@ -138,7 +138,7 @@ include 'db.php';
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm" data-bs-toggle="modal" data-bs-target="#loginModal">
                         <div class="card-body">
                             <h3 class="card-title">Process Tracker</h3>
                             <p class="card-text">Connect with the best vendors in your area.</p>
