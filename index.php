@@ -95,6 +95,7 @@ include 'db.php';
                         <a href="vendor_listing.php?category_id=3" class="btn btn-outline-dark">See DJs</a>
                     </div>
                 </div>
+                <!-- Caterers -->
                 <div class="col-md-4 mb-4">
                     <div class="vendor-card p-3 text-center" style="background-color: #d4edda;">
                         <img src="Images/caterers.jpg" alt="Venues" class="img-fluid mb-3" loading="lazy">
@@ -103,6 +104,7 @@ include 'db.php';
                         <a href="vendor_listing.php?category_id=7" class="btn btn-outline-dark">Browse Cateres</a>
                     </div>
                 </div>
+                <!-- Beauty -->
                 <div class="col-md-4 mb-4">
                     <div class="vendor-card p-3 text-center" style="background-color: #f5f4b6;">
                         <img src="Images/beauty.jpg" alt="Venues" class="img-fluid mb-3" loading="lazy">
@@ -114,7 +116,7 @@ include 'db.php';
             </div>
         </div>
     </section>
-    <!-- Features Section -->
+    <!-- Plan your wedding -->
     <section id="features" class="py-5">
         <div class="container text-center">
             <h2 class="mb-5">Plan your wedding</h2>

@@ -30,8 +30,10 @@ $result_vendors = $conn->query($sql_vendors);
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <?php include 'header.php' ?>
 
+    <?php include 'header.php'; ?>
+    <?php include 'modals.php'; ?>
+    
     <section class="vendors-section text-center py-5">
         <h2 class="mb-3">Vendors for <?php echo $category_name; ?></h2>
         <div class="container">
@@ -45,7 +47,8 @@ $result_vendors = $conn->query($sql_vendors);
                                 <img src="path/to/vendor/image/<?php echo $vendor['image']; ?>" alt="<?php echo $vendor['name']; ?>" class="img-fluid mb-3">
                                 <h5><?php echo $vendor['name']; ?></h5>
                                 <p><?php echo $vendor['description']; ?></p>
-                                <a href="vendor-details.php?vendor_id=<?php echo $vendor['id']; ?>" class="btn btn-outline-dark">View Details</a>
+                                <!-- Trigger the login modal when View Details is clicked -->
+                                <a class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#loginModal">View Details</a>
                             </div>
                         </div>
                         <?php
@@ -57,10 +60,11 @@ $result_vendors = $conn->query($sql_vendors);
             </div>
         </div>
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <?php include 'footer.php' ?>
 </body>
 </html>
+
 <?php
 $conn->close();
 ?>
