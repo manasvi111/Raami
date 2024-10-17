@@ -53,7 +53,7 @@ $percentage_spent = $total_budget > 0 ? ($amount_spent / $total_budget) * 100 : 
     <!-- Header Section -->
     <header id="custom-header" class="text-white p-3 text-center">
         <h2>Welcome, <?php echo htmlspecialchars($user_name); ?></h2>
-        <a href="#" class="btn btn-light btn-sm">Logout</a>
+        <a href="logout.php" class="btn btn-light btn-sm">Logout</a>
     </header>
 
     <!-- Main Dashboard Section -->
