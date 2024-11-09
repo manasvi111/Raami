@@ -192,8 +192,23 @@ include 'db.php';
            
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get URL parameters
+            const params = new URLSearchParams(window.location.search);
+            const section = params.get("section");
 
+            // Scroll to the specified section if parameter exists
+            if (section) {
+                const targetElement = document.getElementById(section);
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+    });
+</script>
+
+</body>
 </html>
 <?php
 $conn->close();
