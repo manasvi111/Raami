@@ -17,11 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['full_name'] = $user['full_name'];
 
-        // Redirect based on whether the user is the admin
-        if ($user['email'] == 'admin@outlook.com') { // Replace with the admin's email
+        // Check if user is the admin based on email
+        if ($user['email'] == 'admin@outlook.com') { 
+            $_SESSION['is_admin'] = true; // Set an admin flag
             header('Location: admin_dashboard.php'); // Redirect admin to admin dashboard
         } else {
-            header('Location: user_dashboard.php'); // Regular users go to user dashboard
+            $_SESSION['is_admin'] = false; // Not an admin
+            header('Location: user_dashboard.php'); // Redirect regular users
         }
         exit();
     } else {
@@ -31,3 +33,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 }
 $conn->close();
+?>

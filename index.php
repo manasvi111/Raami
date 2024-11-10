@@ -261,7 +261,7 @@ if (isset($_SESSION['login_error'])) {
     }, 5000);
     });
 </script>
-
+<?php include 'footer.php'; ?>
 </body>
 </html>
 <?php
