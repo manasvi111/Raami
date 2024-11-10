@@ -15,7 +15,19 @@ $pendingRequests = $conn->query("SELECT * FROM vendor_requests WHERE status = 'p
 $registeredUsers = $conn->query("SELECT * FROM users");
 
 // Fetch all approved vendors
-$approvedVendors = $conn->query("SELECT * FROM vendors");
+$approvedVendors = $conn->query("SELECT vendors.id, vendors.name, vendor_categories.category_name AS category
+    FROM vendors
+    JOIN vendor_categories ON vendors.category_id = vendor_categories.id");
+
+// Fetch contact submissions
+$contactSubmissions = $conn->query("SELECT * FROM contact_submissions ORDER BY submitted_at DESC");
+// Fetch new contacts
+$newContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = 'new'");
+
+// Fetch past (reviewed) contacts
+$pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = 'reviewed'");
+
+
 ?>
 
 <!DOCTYPE html>
@@ -53,6 +65,8 @@ $approvedVendors = $conn->query("SELECT * FROM vendors");
     <a href="#pendingRequests">Pending Vendor Requests</a>
     <a href="#registeredUsers">Registered Users</a>
     <a href="#approvedVendors">Approved Vendors</a>
+    <a href="#new-contacts">New Contact Submissions</a>
+    <a href="#past-contacts">Past Contact</a>
 </div>
 
 <!-- Main Content -->
@@ -151,6 +165,77 @@ $approvedVendors = $conn->query("SELECT * FROM vendors");
                 </div>
             </div>
         </section>
+
+       <!-- New Contacts Section -->
+        <section id="new-contacts" class="my-5">
+            <h3>New Contacts</h3>
+            <?php if ($newContacts->num_rows > 0): ?>
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Message</th>
+                                    <th>Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php while ($contact = $newContacts->fetch_assoc()): ?>
+                                    <tr>
+                                        <td><?php echo htmlspecialchars($contact['name']); ?></td>
+                                        <td><?php echo htmlspecialchars($contact['email']); ?></td>
+                                        <td><?php echo htmlspecialchars($contact['message']); ?></td>
+                                        <td><?php echo htmlspecialchars($contact['submitted_at']); ?></td>
+                                        <td>
+                                        <a href="mark_as_reviewed.php?id=<?php echo $contact['id']; ?>" class="btn btn-sm btn-review">Mark as Reviewed</a>
+                                        </td>
+                                    </tr>
+                                <?php endwhile; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <?php else: ?>
+                <p class="text-muted">No new contacts found.</p>
+            <?php endif; ?>
+        </section>
+
+        <!-- Past Contacts Section -->
+        <section id="past-contacts" class="my-5">
+            <h3>Past Contacts</h3>
+            <?php if ($pastContacts->num_rows > 0): ?>
+                <div class="card">
+                    <div class="card-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Message</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php while ($contact = $pastContacts->fetch_assoc()): ?>
+                                    <tr>
+                                        <td><?php echo htmlspecialchars($contact['name']); ?></td>
+                                        <td><?php echo htmlspecialchars($contact['email']); ?></td>
+                                        <td><?php echo htmlspecialchars($contact['message']); ?></td>
+                                        <td><?php echo htmlspecialchars($contact['submitted_at']); ?></td>
+                                    </tr>
+                                <?php endwhile; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            <?php else: ?>
+                <p class="text-muted">No past contacts found.</p>
+            <?php endif; ?>
+        </section>
+
     </div>
 </div>
 

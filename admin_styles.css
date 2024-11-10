@@ -165,6 +165,23 @@ h2 {
     margin-top: 1rem;
     text-align: center;
 }
+/* Style for "Mark as Reviewed" Button */
+.btn-review {
+    background-color: #5c4033; /* Main theme color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-review:hover {
+    background-color: #4a3127; /* Slightly darker shade on hover */
+    color: #f7e7ce; /* Light theme color */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
