@@ -1,0 +1,186 @@
+/* Reset some basic styles for consistency */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e6; /* Raami's soft background color */
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #5c4033; /* Raami's theme dark brown */
+    color: #f7e7ce;
+}
+
+.navbar-brand {
+    color: #f7e7ce;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #f7e7ce;
+}
+
+.navbar .nav-link:hover {
+    color: #fff;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 56px; /* Below the navbar */
+    left: 0;
+    width: 250px;
+    height: calc(100% - 56px); /* Full height minus navbar */
+    background-color: #5c4033; /* Raami's dark theme color */
+    color: #f7e7ce;
+    padding-top: 1rem;
+    overflow-y: auto;
+}
+
+.sidebar h4 {
+    color: #f7e7ce;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sidebar a {
+    display: block;
+    color: #f7e7ce;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #4a3127; /* Slightly darker shade on hover */
+}
+
+/* Main Content Styles */
+.main-content {
+    margin-left: 250px; /* Width of the sidebar */
+    padding-top: 80px; /* Extra padding to account for the fixed navbar */
+    padding: 2rem;
+}
+
+/* Section Heading Styles */
+h2, h3 {
+    color: #5c4033; /* Raami theme color */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.table-bordered th, .table-bordered td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+}
+
+.table th {
+    background-color: #f5f0e6;
+    color: #5c4033;
+    font-weight: bold;
+}
+
+.table td {
+    color: #5c4033;
+}
+
+.table img {
+    max-width: 100px;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.btn-success {
+    background-color: #4a3127; /* Darker brown for approve button */
+    color: #f7e7ce;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #5c4033;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #d9534f; /* Bootstrap red */
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+    color: #ffffff;
+}
+
+/* Scrollable sections inside main content */
+.main-content section {
+    padding: 1.5rem 0;
+}
+
+/* Success Message */
+.alert-success {
+    color: #5c4033;
+    background-color: #fff7e9;
+    border: 1px solid #5c4033;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
