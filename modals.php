@@ -45,13 +45,6 @@
                         <label for="signup-password" class="form-label">Password</label>
                         <input type="password" class="form-control" id="signup-password" name="password" required>
                     </div>
-                    <div class="mb-3">
-                        <label for="user-type" class="form-label">Register as</label>
-                        <select name="user_type" id="user-type" class="form-select" required>
-                            <option value="couple">Couple</option>
-                            <option value="vendor">Vendor</option>
-                        </select>
-                    </div>
 
                     <div class="mb-3" id="vendor-category" style="display: none;">
                         <label for="vendor-category-select" class="form-label">Select Vendor Category</label>

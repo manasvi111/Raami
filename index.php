@@ -259,13 +259,11 @@ if (isset($_SESSION['login_error'])) {
             setTimeout(() => alertElement.remove(), 500); // Completely remove the element from the DOM after fading out
         }
     }, 5000);
+    });
+</script>
 
-  
-      <!--Footer -->
-      <?php include 'footer.php' ?>      
-           
+</body>
+</html>
 <?php
 $conn->close();
 ?>
-</body>
-</html>

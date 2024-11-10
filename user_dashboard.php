@@ -47,7 +47,6 @@ $total_tasks = $task_data['total_tasks'];
 $completed_tasks = $task_data['completed_tasks'];
 $progress_percentage = ($total_tasks > 0) ? ($completed_tasks / $total_tasks) * 100 : 0;
 
-
 ?>
 
 <!DOCTYPE html>
@@ -114,7 +113,6 @@ $progress_percentage = ($total_tasks > 0) ? ($completed_tasks / $total_tasks) * 
                         <h3 class="card-title">Progress Tracker</h3>
                         <div class="progress-circle mx-auto mb-3">
                             <span><?= round($progress_percentage); ?>%</span>
-                            <span>50%</span>
                         </div>
                         <p>Overall wedding planning progress.</p>
                     </div>

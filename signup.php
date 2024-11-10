@@ -6,8 +6,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $full_name = $_POST['name'];
     $email = $_POST['email'];
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-    $user_type = $_POST['user_type'];
 
+    // Check if the email already exists
     $sql_check = "SELECT * FROM users WHERE email = '$email'";
     $result = $conn->query($sql_check);
 
@@ -16,7 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         header('Location: index.php');
         exit();
     } else {
-        $sql = "INSERT INTO users (full_name, email, password, user_type) VALUES ('$full_name', '$email', '$password', '$user_type')";
+        // Insert new user into the database
+        $sql = "INSERT INTO users (full_name, email, password) VALUES ('$full_name', '$email', '$password')";
         if ($conn->query($sql) === TRUE) {
             $_SESSION['signup_success'] = "Sign up successful!";
             header("Location: index.php");
