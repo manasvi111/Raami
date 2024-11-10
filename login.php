@@ -1,7 +1,5 @@
 <?php
-// Include database connection
 include 'db.php';
-
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -16,12 +14,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user = $result->fetch_assoc();
 
     if ($user && password_verify($password, $user['password'])) {
-        // Set session variables
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['full_name'] = $user['full_name'];
         $_SESSION['user_type'] = $user['user_type'];
 
-        // Redirect based on user type
         if ($user['user_type'] == 'vendor') {
             header('Location: vendor_dashboard.php');
         } else {
@@ -29,10 +25,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
         exit();
     } else {
-        echo "Invalid login credentials!";
+        $_SESSION['login_error'] = "Invalid login credentials!";
+        header('Location: index.php');
+        exit();
     }
 }
-
-
 $conn->close();
 ?>

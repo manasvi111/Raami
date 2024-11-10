@@ -1,6 +1,18 @@
 <?php
 // Include database connection
+session_start();
 include 'db.php';
+// Check for session messages and display them
+if (isset($_SESSION['login_error'])) {
+    echo '<div class="alert alert-danger text-center" role="alert">' . $_SESSION['login_error'] . '</div>';
+    unset($_SESSION['login_error']);
+} elseif (isset($_SESSION['signup_error'])) {
+    echo '<div class="alert alert-danger text-center" role="alert">' . $_SESSION['signup_error'] . '</div>';
+    unset($_SESSION['signup_error']);
+} elseif (isset($_SESSION['signup_success'])) {
+    echo '<div class="alert alert-success text-center" role="alert">' . $_SESSION['signup_success'] . '</div>';
+    unset($_SESSION['signup_success']);
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,6 +32,7 @@ include 'db.php';
 </head>
 
 <body>
+
     <!-- Header Section -->
     <header class="shadow-sm py-3">
     <div class="container d-flex justify-content-between align-items-center">
@@ -186,14 +199,70 @@ include 'db.php';
             </a>
           </div>
         </div>
-      </section>      
-      <!--Footer -->
-      <?php include 'footer.php' ?>      
-           
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+      </section>    
+      <!-- Modal for Messages -->
+<div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="messageModalLabel">Notification</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <?php
+                if (isset($_SESSION['login_error'])) {
+                    echo $_SESSION['login_error'];
+                    unset($_SESSION['login_error']);
+                } elseif (isset($_SESSION['signup_error'])) {
+                    echo $_SESSION['signup_error'];
+                    unset($_SESSION['signup_error']);
+                } elseif (isset($_SESSION['signup_success'])) {
+                    echo $_SESSION['signup_success'];
+                    unset($_SESSION['signup_success']);
+                }
+                ?>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Show the modal only if a message exists in the session
+        <?php if (isset($_SESSION['login_error']) || isset($_SESSION['signup_error']) || isset($_SESSION['signup_success'])): ?>
+            var messageModal = new bootstrap.Modal(document.getElementById('messageModal'));
+            messageModal.show();
+        <?php endif; ?>
+
+        // Smooth scrolling for sections based on URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const section = params.get("section");
+
+        if (section) {
+            const targetElement = document.getElementById(section);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+        // Auto-close the alert after 5 seconds
+    setTimeout(function() {
+        let alertElement = document.querySelector('.alert');
+        if (alertElement) {
+            alertElement.classList.add('fade'); // Add fade class for smooth transition
+            alertElement.classList.remove('show'); // Hide the alert
+            setTimeout(() => alertElement.remove(), 500); // Completely remove the element from the DOM after fading out
+        }
+    }, 5000);
+    });
+</script>
+
+</body>
 </html>
 <?php
 $conn->close();
