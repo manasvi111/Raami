@@ -54,11 +54,12 @@ $result_vendors = $conn->query($sql_vendors);
                         ?>
                         <div class="col-md-4 mb-4">
                             <div class="vendor-card p-3 text-center" style="background-color: #f7e7ce;">
-                                <img src="path/to/vendor/image/<?php echo $vendor['image']; ?>" alt="<?php echo $vendor['name']; ?>" class="img-fluid mb-3">
+                            <img src="<?php echo $vendor['image']; ?>" alt="<?php echo htmlspecialchars($vendor['name']); ?>" class="img-fluid mb-3">
+
                                 <h5><?php echo $vendor['name']; ?></h5>
                                 <p><?php echo $vendor['description']; ?></p>
                                 <!-- Trigger the login modal when View Details is clicked -->
-                                <a class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#loginModal">View Details</a>
+                                <a class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#loginModal">View Contact Details</a>
                             </div>
                         </div>
                         <?php
@@ -71,7 +72,7 @@ $result_vendors = $conn->query($sql_vendors);
         </div>
         <!-- "Want to be a Vendor?" Button -->
         <div class="text-center mt-4">
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vendorRequestModal">Want to be a Vendor?</button>
+            <button type="button" class="btn custom-vendor-btn" data-bs-toggle="modal" data-bs-target="#vendorRequestModal">Want to be a Vendor?</button>
         </div>
     </section>
 
@@ -94,6 +95,10 @@ $result_vendors = $conn->query($sql_vendors);
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="text" class="form-control" id="phone" name="phone" required>
                         </div>
                         <div class="mb-3">
                             <label for="description" class="form-label">Description</label>

@@ -235,6 +235,28 @@ header {
     background-color: #4a3127; /* Darker button color on hover */
     color: #f7e7ce; /* Text color on hover */
 }
+.custom-vendor-btn {
+    background-color: #5c4033; /* Dark theme color */
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.custom-vendor-btn:hover {
+    background-color: #4a3127; /* Slightly darker on hover */
+    color: #f7e7ce; /* Text color for contrast */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.custom-vendor-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(92, 64, 51, 0.3); /* Focus ring */
+}
 
 /************Testimonials*****************/
 #testimonials {

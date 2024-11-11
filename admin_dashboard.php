@@ -85,6 +85,8 @@ $pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = '
                                 <tr>
                                     <th>Name</th>
                                     <th>Category</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
                                     <th>Description</th>
                                     <th>Image</th>
                                     <th>Actions</th>
@@ -95,6 +97,8 @@ $pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = '
                                     <tr>
                                         <td><?php echo htmlspecialchars($request['name']); ?></td>
                                         <td><?php echo htmlspecialchars($request['category']); ?></td>
+                                        <td><?php echo htmlspecialchars($request['email']); ?></td>
+                                        <td><?php echo htmlspecialchars($request['phone']); ?></td>
                                         <td><?php echo htmlspecialchars($request['description']); ?></td>
                                         <td><img src="<?php echo htmlspecialchars($request['image']); ?>" alt="Vendor Image" style="width: 100px; height: auto;"></td>
                                         <td>

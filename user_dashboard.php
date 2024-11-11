@@ -120,6 +120,42 @@ $progress_percentage = ($total_tasks > 0) ? ($completed_tasks / $total_tasks) * 
             </div>
         </div>
     </div>
+    
+    <div class="container">
+    <h2 class="text-center mt-4">Vendor Directory with Contact details</h2>
+
+    <?php
+    // Fetch all categories with vendors
+    $categories = $conn->query("SELECT * FROM vendor_categories");
+    while ($category = $categories->fetch_assoc()) {
+        $category_id = $category['id'];
+        $category_name = $category['category_name'];
+
+        // Fetch vendors for each category
+        $vendors = $conn->query("SELECT * FROM vendors WHERE category_id = $category_id");
+        if ($vendors->num_rows > 0) {
+            echo "<section class='vendor-category my-5'>";
+            echo "<h3 class='category-title'>$category_name</h3>";
+            echo "<div class='row'>";
+
+            while ($vendor = $vendors->fetch_assoc()) {
+                echo "<div class='col-md-4 mb-4'>";
+                echo "<div class='vendor-card text-center'>";
+                echo "<img src='{$vendor['image']}' alt='{$vendor['name']}' class='img-fluid vendor-image mb-3'>";
+                echo "<h5>{$vendor['name']}</h5>";
+                echo "<p>{$vendor['description']}</p>";
+                echo "<p><strong>Contact:</strong> {$vendor['email']}<br>{$vendor['phone']}</p>";
+                echo "</div>";
+                echo "</div>";
+            }
+
+            echo "</div>";
+            echo "</section>";
+        }
+    }
+    ?>
+</div>
+
 
     <!-- Footer -->
     <footer id="custom-footer" class="text-center py-3">

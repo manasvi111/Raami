@@ -14,20 +14,25 @@ $action = $_GET['action'] ?? '';
 
 if ($requestId > 0 && in_array($action, ['approve', 'reject'])) {
     if ($action === 'approve') {
-        // Update request status to 'approved' and insert into vendors table
+        // Update the request status to 'approved' in vendor_requests table
+        $conn->query("UPDATE vendor_requests SET status = 'approved' WHERE id = $requestId");
+
+        // Fetch the approved request data
         $result = $conn->query("SELECT * FROM vendor_requests WHERE id = $requestId");
         $request = $result->fetch_assoc();
-        $stmt = $conn->prepare("INSERT INTO vendors (name, description, category_id, image) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("ssis", $request['name'], $request['description'], $request['category'], $request['image']);
+
+        // Insert the approved request into the vendors table
+        $stmt = $conn->prepare("INSERT INTO vendors (name, email, phone, description, category_id, image) VALUES (?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("ssssss", $request['name'], $request['email'], $request['phone'], $request['description'], $request['category'], $request['image']);
         $stmt->execute();
-        $conn->query("DELETE FROM vendor_requests WHERE id = $requestId");
 
     } elseif ($action === 'reject') {
-        $conn->query("DELETE FROM vendor_requests WHERE id = $requestId");
+        // Update the request status to 'rejected' in vendor_requests table
+        $conn->query("UPDATE vendor_requests SET status = 'rejected' WHERE id = $requestId");
     }
 }
 
-// Redirect back to admin dashboard
+// Redirect back to the admin dashboard
 header("Location: admin_dashboard.php");
 exit();
 ?>
