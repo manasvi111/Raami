@@ -60,8 +60,8 @@ if (isset($_SESSION['login_error'])) {
         <div class="container">
             <h1 class="display-4">Your Wedding, Simplified</h1>
             <p class="lead">From dream to reality—Raami helps you plan every detail effortlessly.</p>
-            <button class="btn btn-primary btn-lg m-2 custom-cta">Start Planning Stress-Free</button>
-            <button class="btn btn-outline-light btn-lg m-2 custom-cta-outline">Discover Your Perfect Vendors</button> 
+            <a href="#features" class="btn btn-primary btn-lg m-2 custom-cta">Start Planning Stress-Free</a>
+            <a href="#vendors" class="btn btn-outline-light btn-lg m-2 custom-cta-outline">Discover Your Perfect Vendors</a> 
         </div>
     </section>
 
