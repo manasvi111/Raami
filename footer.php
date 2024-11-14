@@ -11,10 +11,10 @@
             <div class="col-md-4 mb-4">
               <h5>Quick Links</h5>
               <ul class="list-unstyled">
-                <li><a href="#" class="text-muted">Home</a></li>
-                <li><a href="#" class="text-muted">Services</a></li>
-                <li><a href="#" class="text-muted">Vendors</a></li>
-                <li><a href="#" class="text-muted">Contact</a></li>
+                <li><a href="index.php" class="text-muted">Home</a></li>
+                <li><a href="index.php?section=features" class="text-muted">Services</a></li>
+                <li><a href="index.php?section=vendors" class="text-muted">Vendors</a></li>
+                <li><a href="contact.php" class="text-muted">Contact</a></li>
               </ul>
             </div>
             <!-- Contact Info -->

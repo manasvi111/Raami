@@ -62,9 +62,9 @@ $pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = '
 <!-- Sidebar -->
 <div class="sidebar">
     <h4 class="text-center mt-4">Menu</h4>
-    <a href="#pendingRequests">Pending Vendor Requests</a>
-    <a href="#registeredUsers">Registered Users</a>
-    <a href="#approvedVendors">Approved Vendors</a>
+    <a href="#pending-requests">Pending Vendor Requests</a>
+    <a href="#registered-users">Registered Users</a>
+    <a href="#approved-vendors">Approved Vendors</a>
     <a href="#new-contacts">New Contact Submissions</a>
     <a href="#past-contacts">Past Contact</a>
 </div>
