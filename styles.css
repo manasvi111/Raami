@@ -573,6 +573,7 @@ header {
 
 /* Mobile responsive adjustments */
 @media (max-width: 768px) {
+    
     /*Contact us page*/
     .contact-section {
         padding: 3rem 1.5rem;

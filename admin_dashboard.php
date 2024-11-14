@@ -63,10 +63,11 @@ $pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = '
 <div class="sidebar">
     <h4 class="text-center mt-4">Menu</h4>
     <a href="#pending-requests">Pending Vendor Requests</a>
-    <a href="#registered-users">Registered Users</a>
-    <a href="#approved-vendors">Approved Vendors</a>
+    <a href="#approved-vendors">Approved Vendors</a>   
     <a href="#new-contacts">New Contact Submissions</a>
     <a href="#past-contacts">Past Contact</a>
+    <a href="#manage-categories">Manage Categories</a>
+    <a href="#registered-users">Registered Users</a>
 </div>
 
 <!-- Main Content -->
@@ -114,33 +115,6 @@ $pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = '
             <?php else: ?>
                 <p class="text-muted">No pending requests found.</p>
             <?php endif; ?>
-        </section>
-
-        <!-- Registered Users Section -->
-        <section id="registered-users" class="my-5">
-            <h3>Registered Users</h3>
-            <div class="card">
-                <div class="card-body">
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>User ID</th>
-                                <th>Full Name</th>
-                                <th>Email</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php while ($user = $registeredUsers->fetch_assoc()): ?>
-                                <tr>
-                                    <td><?php echo $user['id']; ?></td>
-                                    <td><?php echo htmlspecialchars($user['full_name']); ?></td>
-                                    <td><?php echo htmlspecialchars($user['email']); ?></td>
-                                </tr>
-                            <?php endwhile; ?>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
         </section>
 
         <!-- Approved Vendors Section -->
@@ -239,7 +213,85 @@ $pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = '
                 <p class="text-muted">No past contacts found.</p>
             <?php endif; ?>
         </section>
+        <!-- Manage Categories Section -->
+        <section id="manage-categories" class="my-5">
+            <h3>Manage Categories</h3>
+            
+            <!-- Add New Category Form -->
+            <form action="add_category.php" method="POST" class="mb-4">
+                <div class="input-group">
+                    <input type="text" name="category_name" class="form-control" placeholder="New Category Name" required>
+                    <button class="btn btn-primary" type="submit">Add Category</button>
+                </div>
+            </form>
+            
+            <!-- Category List Table -->
+            <div class="card">
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Category ID</th>
+                                <th>Category Name</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            // Fetch categories from the database
+                            $categories = $conn->query("SELECT * FROM vendor_categories");
+                            while ($category = $categories->fetch_assoc()) {
+                                echo "<tr>";
+                                echo "<td>{$category['id']}</td>";
+                                echo "<td>{$category['category_name']}</td>";
+                                echo "<td>";
+                                echo "<a href='edit_category.php?id={$category['id']}' class='btn btn-sm btn-warning'>Edit</a> ";
+                                echo "<a href='delete_category.php?id={$category['id']}' class='btn btn-sm btn-danger'>Delete</a>";
+                                echo "</td>";
+                                echo "</tr>";
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                    <?php if (isset($_SESSION['success_message'])): ?>
+                    <div class="alert alert-success"><?= $_SESSION['success_message']; ?></div>
+                    <?php unset($_SESSION['success_message']); ?>
+                <?php endif; ?>
 
+                <?php if (isset($_SESSION['error_message'])): ?>
+                    <div class="alert alert-danger"><?= $_SESSION['error_message']; ?></div>
+                    <?php unset($_SESSION['error_message']); ?>
+                <?php endif; ?>
+
+                </div>
+            </div>
+        </section>
+        <!-- Registered Users Section -->
+        <section id="registered-users" class="my-5">
+            <h3>Registered Users</h3>
+            <div class="card">
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>User ID</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php while ($user = $registeredUsers->fetch_assoc()): ?>
+                                <tr>
+                                    <td><?php echo $user['id']; ?></td>
+                                    <td><?php echo htmlspecialchars($user['full_name']); ?></td>
+                                    <td><?php echo htmlspecialchars($user['email']); ?></td>
+                                </tr>
+                            <?php endwhile; ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
     </div>
 </div>
 
