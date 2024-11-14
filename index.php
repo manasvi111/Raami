@@ -32,24 +32,54 @@ if (isset($_SESSION['login_error'])) {
 </head>
 
 <body>
-
+    
     <!-- Header Section -->
-    <header class="shadow-sm py-3">
-    <div class="container d-flex justify-content-between align-items-center">
-        <a href="index.php" class="logo">Raami</a> <!-- Link to home page -->
-        <nav class="d-flex flex-grow-1 justify-content-center">
-            <a href="#vendors" class="nav-link">Vendor directory</a>
-            <a href="#features" class="nav-link">Services</a>
-            <a href="resources.php" class="nav-link">Resources</a>
-            <a href="#testimonials" class="nav-link">About Us</a>
-            <a href="contact.php" class="nav-link">Contact Us</a>
-        </nav>
-        <div>
-        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-        <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+   <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3">
+    <div class="container">
+        <a class="navbar-brand" href="index.php">Raami</a> <!-- Logo/Brand name -->
+
+        <!-- Navbar Toggler for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navbar Links -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#vendors">Vendor Directory</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.php">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact Us</a>
+                </li>
+            </ul>
+
+            <!-- Login and Sign Up Buttons (Visible only in mobile view) -->
+            <div class="d-lg-none mt-2 text-center">
+                <button class="btn btn-outline-primary mb-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
+            </div>
+        </div>
+
+        <!-- Login and Sign Up Buttons (Visible only in larger screens) -->
+        <div class="d-none d-lg-flex">
+            <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</button>
         </div>
     </div>
-</header>
+</nav>
+
 <?php include 'modals.php'; ?>
     <!-- Hero Section -->
     <section id="hero" class="py-5 text-center">
