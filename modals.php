@@ -18,6 +18,9 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
+                <div class="text-center mt-3">
+                    <p>Don't have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up</a></p>
+                </div>
             </div>
         </div>
     </div>
@@ -73,6 +76,9 @@
 
                     <button type="submit" class="btn btn-primary">Sign Up</button>
                 </form>
+                <div class="text-center mt-3">
+                    <p>Already have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></p>
+                </div>
             </div>
         </div>
     </div>
