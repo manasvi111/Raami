@@ -80,7 +80,7 @@ $pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = '
             <h3>Pending Vendor Requests</h3>
             <?php if ($pendingRequests->num_rows > 0): ?>
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body table-responsive">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -149,7 +149,7 @@ $pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = '
             <h3>New Contacts</h3>
             <?php if ($newContacts->num_rows > 0): ?>
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body table-responsive">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -186,7 +186,7 @@ $pastContacts = $conn->query("SELECT * FROM contact_submissions WHERE status = '
             <h3>Past Contacts</h3>
             <?php if ($pastContacts->num_rows > 0): ?>
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body table-responsive">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
