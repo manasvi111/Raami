@@ -1,0 +1,656 @@
+/****************Header Section********************/
+header {
+    background-color: white !important; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000; /* Ensure it's on top of all elements */
+}
+
+.navbar {
+    background-color: white !important; /* Keep background white */
+    color: #5c4033; /* Set default text color */
+}
+
+.navbar-brand {
+    color: #5c4033 !important; /* Brand logo color */
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #5c4033 !important; /* Set link color */
+    font-size: 17px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #5c4033; /* Customize the logo color */
+}
+
+.nav-link {
+    color: #5c4033; /* Link color */
+    margin: 0 rem;
+    font-size: 17px; /* Font size for links */
+}
+
+.nav-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Button styles */
+.btn-outline-primary {
+    background-color: #5c4033; 
+    color: #ffffff; 
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4a3127; 
+    color: #f7e7ce; 
+}
+.btn-outline-secondary {
+    color: #5c4033; 
+    border: 2px solid #5c4033;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #5c4033; 
+    color: #f7e7ce; 
+}
+
+/****************Hero Section********************/
+/* Heading and tagline Styles */
+#hero {
+    position: relative;
+    overflow: hidden;
+    height: 80vh; /* Set height to viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.5rem;  /* Slightly increase the font size */
+    font-weight: 500;   /* Make the font medium bold */
+    line-height: 1.6;   /* Increase line height for better readability */
+    margin-top: 1rem;
+    color: #5c4033;
+}
+
+.bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.container {
+    position: relative; 
+    z-index: 1; 
+    color: #5c4033; 
+}
+
+.custom-cta {
+    background-color: #5c4033;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.custom-cta:hover {
+    background-color: #4a3127;
+    color: #f7e7ce;
+}
+
+.custom-cta-outline {
+    color: #5c4033;
+    border: 2px solid #5c4033;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.custom-cta-outline:hover {
+    background-color: #5c4033;
+    color: #f7e7ce;
+}
+/**************** Plan Your Wedding Section ********************/
+
+#features {
+    padding: 5rem 0;
+    background-color: #f7e7ce; /* Match the color theme */
+}
+
+#features h2 {
+    font-size: 2.5rem;
+    color: #5c4033; /* Match the theme */
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Elevation on hover */
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #5c4033; /* Title color */
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.125rem;
+    color: #5c4033;
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Add hover effect to the card text */
+.card:hover .card-title, .card:hover .card-text {
+    color: #4a3127; /* Darker color on hover */
+}
+
+/**************** Find Vendors Section ********************/
+
+.vendors-section {
+    background-color: #f5f0e6; 
+    padding: 5rem 0;
+}
+
+.vendors-section h2 {
+    font-size: 2.5rem;
+    color: #5c4033; /* Main theme color */
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.vendors-section p {
+    color: #5c4033; /* Text in theme color */
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
+}
+
+.vendor-card {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 10px;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    min-height: 300px;
+}
+
+.vendor-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+.vendor-card img {
+    max-height: 200px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.vendor-card h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5c4033; /* Heading color */
+    margin-bottom: 0.75rem;
+}
+
+.vendor-card p {
+    font-size: 1.125rem;
+    color: #5c4033; /* Text color */
+    margin-bottom: 1.5rem;
+}
+
+.vendor-card .btn {
+    background-color: #5c4033; /* Button color matching the theme */
+    color: #ffffff; 
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px; 
+    transition: background-color 0.3s ease;
+}
+
+.vendor-card .btn:hover {
+    background-color: #4a3127; /* Darker button color on hover */
+    color: #f7e7ce; /* Text color on hover */
+}
+.custom-vendor-btn {
+    background-color: #5c4033; /* Dark theme color */
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.custom-vendor-btn:hover {
+    background-color: #4a3127; /* Slightly darker on hover */
+    color: #f7e7ce; /* Text color for contrast */
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.custom-vendor-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(92, 64, 51, 0.3); /* Focus ring */
+}
+
+/************Testimonials*****************/
+#testimonials {
+    background-color: #f5f0e6; 
+    padding: 4rem 0;
+  }
+  
+  #testimonials h2 {
+    color: #5c4033; /* Main theme color for heading */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+  } 
+  
+  blockquote {
+    font-size: 1.5rem;
+    color: #5c4033;
+  }
+  
+  .blockquote-footer {
+    color: #4a3127;
+    font-size: 1.25rem;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #5c4033; /* Customize the arrows */
+  }
+  
+/*******Footer*********/
+.footer-section {
+    background-color: #5c4033; /* Dark theme color */
+    color: #f7e7ce !important; /* Higher contrast text for readability */
+    padding: 2rem 0;
+}
+
+.footer-section h5 {
+    color: #f7e7ce !important; /* Keep heading color */
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #f7e7ce !important; /* Lighter text color */
+}
+
+.footer-section a:hover {
+    color: #ffffff !important; /* Bright white on hover for contrast */
+    text-decoration: underline; /* Add underline for clarity */
+}
+
+.footer-section .social-icons a {
+    color: #f7e7ce !important; /* Use consistent light color for icons */
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+.footer-section .social-icons a:hover {
+    color: #ffffff !important; /* Brighter color on hover for icons */
+}
+
+.footer-section ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+/***********Contact us page********************/
+/* General Styling for Contact Section */
+.contact-section {
+    background-color: #f7e7ce; /* Matches the Raami theme */
+    padding: 5rem 0;
+}
+
+.contact-section h2 {
+    color: #5c4033; /* Main theme color for heading */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contact-section p {
+    color: #5c4033; /* Main theme color for text */
+    font-size: 1.25rem;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+}
+
+.btn-primary.custom-cta {
+    background-color: #5c4033; /* Button matches theme color */
+    color: #ffffff;
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary.custom-cta:hover {
+    background-color: #4a3127; /* Darker shade on hover */
+    color: #f7e7ce;
+}
+
+.contact-section h5 {
+    color: #5c4033;
+    margin-bottom: 1rem;
+}
+
+.contact-section a {
+    color: #5c4033;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.contact-section a:hover {
+    color: #4a3127;
+}
+/*****************About Us page*********************/
+/* General Styling for Sections */
+.about-us-section,
+.mission-section,
+.team-section,
+.brand-story-section {
+    padding: 4rem 0;
+}
+
+.about-us-section h2,
+.mission-section h3,
+.team-section h3,
+.brand-story-section h3 {
+    color: #5c4033; /* Main theme color */
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about-us-section p,
+.mission-section p,
+.team-section p,
+.brand-story-section p {
+    color: #5c4033;
+    font-size: 1.25rem;
+    line-height: 1.7;
+}
+
+/* Team Section Styling */
+.team-section .rounded-circle {
+    border: 5px solid #5c4033; /* Border for team member images */
+}
+
+.team-section h5 {
+    color: #5c4033;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.team-section p {
+    font-size: 1rem;
+    color: #5c4033;
+}
+
+.bg-light {
+    background-color: #f7e7ce !important; /* Light background matches the theme */
+}
+/***************Resources Page*****************/
+/* Hero Section */
+#resources-hero {
+    background-color: #f7e7ce;
+}
+
+#resources-hero h1 {
+    color: #5c4033;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#resources-hero p {
+    color: #5c4033;
+    font-size: 1.25rem;
+}
+
+/* Card Styling for Blog Sections */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #5c4033;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #5c4033;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Call to Action (Are You a Blogger?) */
+#cta {
+    background-color: #5c4033;
+    color: #f7e7ce;
+}
+
+#cta h3 {
+    color: #f7e7ce;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#cta p {
+    color: #f7e7ce;
+    font-size: 1.25rem;
+}
+
+#cta a {
+    background-color: #f7e7ce;
+    color: #5c4033;
+    border-color: #f7e7ce;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#cta a:hover {
+    background-color: #fff7e9;
+    color: #5c4033;
+}
+
+/*****************Login and sign up modals************************/
+/* Modal Dialog Box Styling */
+.modal-dialog {
+    max-width: 500px; /* Max width for modal */
+    width: 100%;
+    margin: 1.75rem auto; /* Center modal vertically */
+}
+
+/* Modal Content Styling */
+.modal-content {
+    height: auto; /* Let modal height adjust automatically */
+    max-height: calc(100vh - 100px); /* Ensure modal fits within viewport */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+}
+
+/* Modal Header */
+.modal-header {
+    background-color: #5c4033;
+    color: #f7e7ce;
+    border-bottom: none; /* Remove bottom border */
+}
+
+/* Close Button Styling */
+.modal-header .btn-close {
+    background-color: #f7e7ce;
+    border: none;
+}
+
+/* Modal Body Styling */
+.modal-body {
+    background-color: #fffaf0;
+    color: #5c4033;
+    padding: 20px;
+}
+
+/* Form Controls */
+.modal-body .form-control, 
+.modal-body .form-select { /* Add .form-select to handle dropdown */
+    background-color: #f7e7ce;
+    border: 1px solid #5c4033;
+    color: #5c4033;
+}
+
+.modal-body .form-control:focus, 
+.modal-body .form-select:focus { /* Add focus state for dropdown */
+    background-color: #fffaf0;
+    border-color: #5c4033;
+    box-shadow: none;
+}
+
+/* Modal Footer */
+.modal-footer {
+    background-color: #f7e7ce;
+    text-align: center;
+    border-top: none;
+}
+
+/* Modal Button Styling */
+.modal-body .btn, .modal-footer .btn {
+    background-color: #5c4033 !important;
+    color: #ffffff !important;
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.modal-body .btn:hover, .modal-footer .btn:hover {
+    background-color: #4a3127 !important;
+    color: #ffffff !important;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        border-color: #5c4033; /* Dark brown border for visibility */
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%235c4033' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        /* Dark brown color for the icon */
+    }    
+    /*Navbar*/
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Stack the nav links vertically */
+    header nav {
+        display: flex;
+        flex-direction: column;
+        color: #5c4033;
+    }
+
+    /* Reduce padding on buttons */
+    header .btn {
+        padding: 0.5rem 1rem;
+        margin-top: 0.5rem;
+    }
+    /*Contact us page*/
+    .contact-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .form-control {
+        margin-bottom: 1rem;
+    }
+    /*About us page*/
+    .about-us-section,
+    .mission-section,
+    .team-section,
+    .brand-story-section {
+        padding: 2rem 1rem;
+    }
+    
+    .team-section .rounded-circle {
+        width: 100px;
+        height: 100px;
+    }
+    /*Resources Page*/
+    .card img {
+        height: 150px;
+    }
+    /*Modal Dialog*/
+    .modal-dialog {
+        max-width: 90%; /* Use 90% of the screen width on small devices */
+        margin: 1rem auto; /* Adjust the margin */
+    }
+
+    .modal-content {
+        max-height: calc(100vh - 50px); /* Ensure modal fits within the screen height */
+        overflow-y: auto; /* Enable scrolling */
+    }
+}
