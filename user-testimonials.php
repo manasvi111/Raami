@@ -1,14 +1,24 @@
 <?php
 // Set content for this specific blog post
-$blog_title = "User Testimonials";
+$blog_title = "Progress Tracker: Visualize Your Wedding Planning Journey";
 $blog_image = "Images/UserTestimonials.jpg";
-$blog_lead = "Read real stories from couples who used Raami to plan their perfect weddings, and find inspiration for your own special day.";
+$blog_lead = "Stay on top of your wedding planning tasks with Raami’s progress tracker. See your milestones and ensure everything is on track!";
 $blog_content = "
-    <p>At Raami, we are honored to have helped countless couples plan the wedding of their dreams. Emily and John, one of our happy couples, praised the simplicity of using Raami’s vendor directory. They found a caterer within days and booked their venue with ease, all while staying within their budget. Another couple, Sarah and Michael, loved the wedding planning tips section, which helped them organize their wedding without a professional planner.</p>
+    <p>Planning a wedding involves keeping track of many tasks, and it’s easy to feel overwhelmed with so much to do. That’s why having a clear way to visualize your progress is essential. Raami’s <b>progress tracker</b> ensures you stay on top of every task, from finding your venue to sending out invitations.</p>
 
-    <p>Many of our users highlight the user-friendly interface and the ability to easily communicate with vendors directly through the platform. Some couples also appreciated the vendor reviews, which allowed them to make informed decisions quickly. Other testimonials emphasize how Raami helped them save time and money, making their wedding day less stressful and more enjoyable.</p>
+    <h3>Why Use a Progress Tracker?</h3>
+    <p>A progress tracker helps you break down your wedding planning into manageable chunks. It provides a visual overview of your to-do list and shows you exactly where you stand with your planning. It also helps you stay organized and on schedule.</p>
 
-    <p>Our goal is to ensure that every couple, no matter their budget or style, can plan their perfect wedding with confidence and ease.</p>
+    <h3>How Raami’s Progress Tracker Works</h3>
+    <p>Raami’s <b>progress tracker</b> automatically updates as you mark tasks as complete. You can see at a glance how much you’ve accomplished and how much is left to do. This feature gives you an up-to-date, real-time visual of your wedding planning progress.</p>
+
+    <h3>Keep Track of Milestones</h3>
+    <p>Set deadlines for each task and track your progress towards each milestone. The progress tracker will notify you if you're falling behind on any tasks, helping you stay on track for your big day.</p>
+
+    <h3>How Raami Can Help</h3>
+    <p><b>Raami</b> provides a comprehensive tool to keep track of your wedding planning progress, ensuring that no task is forgotten. With the <b>progress tracker</b>, you can confidently move through each step of your planning, making sure everything is in place for your wedding day.</p>
+
+    <p>Get started with Raami today and make your wedding planning process as smooth and stress-free as possible!</p>
 ";
 
 // Include the blog template to display the post

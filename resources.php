@@ -25,48 +25,48 @@
     <div class="container">
         <div class="row">
 
-            <!-- Wedding Planning Tips -->
+            <!-- Stress-Free Wedding Planning: A Complete Guide -->
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <img src="Images/weddingPlanningTips.jpg" class="card-img-top" alt="Wedding Planning Tips">
                     <div class="card-body">
-                        <h5 class="card-title">Wedding Planning Tips</h5>
+                        <h5 class="card-title">Stress-Free Wedding Planning: A Complete Guide</h5>
                         <p class="card-text">Expert advice and guides to help you plan every detail of your big day, from budget management to timelines.</p>
                         <a href="weddingPlanningTips.php" class="btn btn-outline-primary">Read more</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Vendor Spotlights -->
+            <!-- Wedding Budget Planner: Stay on Track Without Overspending -->
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <img src="Images/vendorSpotlight.jpg" class="card-img-top" alt="Vendor Spotlights">
                     <div class="card-body">
-                        <h5 class="card-title">Vendor Spotlights</h5>
+                        <h5 class="card-title">Wedding Budget Planner: Stay on Track Without Overspending</h5>
                         <p class="card-text">Meet the top wedding vendors who can make your special day unforgettable, featuring caterers, photographers, and more.</p>
                         <a href="vendorSpotlight.php" class="btn btn-outline-primary">Read more</a>
                     </div>
                 </div>
             </div>
 
-            <!-- Trends and Inspiration -->
+            <!-- Vendor Registration: How to Find and Work with Trusted Vendors -->
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <img src="Images/TrendsInspiration.jpg" class="card-img-top" alt="Trends and Inspiration">
                     <div class="card-body">
-                        <h5 class="card-title">Trends and Inspiration</h5>
+                        <h5 class="card-title">Vendor Registration: How to Find and Work with Trusted Vendors</h5>
                         <p class="card-text">Discover the latest wedding trends, from bridal fashion to décor, and get inspired for your dream wedding.</p>
                         <a href="trendsInspiration.php" class="btn btn-outline-primary">Read more</a>
                     </div>
                 </div>
             </div>
 
-            <!-- User Testimonials -->
+            <!-- Progress Tracker: Visualize Your Wedding Planning Journey -->
             <div class="col-md-6 mb-4">
                 <div class="card">
                     <img src="Images/UserTestimonials.jpg" class="card-img-top" alt="User Testimonials">
                     <div class="card-body">
-                        <h5 class="card-title">User Testimonials</h5>
+                        <h5 class="card-title">Progress Tracker: Visualize Your Wedding Planning Journey</h5>
                         <p class="card-text">Hear from real couples who’ve planned their weddings using Raami, sharing their stories and experiences.</p>
                         <a href="user-testimonials.php" class="btn btn-outline-primary">Read more</a>
                     </div>
