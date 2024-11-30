@@ -1,0 +1,8 @@
+# Set the default directory index to Visitor/index.php
+DirectoryIndex Visitor/index.php
+
+# Prevent directory listing
+Options -Indexes
+
+# Enable RewriteEngine if needed for clean URLs
+RewriteEngine On
