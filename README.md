@@ -66,7 +66,7 @@ Raami/
 ## Live Demo
 
 - **Live Link**: [Raami Live](https://dgl409.mthakkar.imgd.ca/)  
-- **GitHub Repository**: [Raami GitHub Repository](https://github.com/your-repo-link-here)
+- **GitHub Repository**: [Raami GitHub Repository](https://github.com/manasvi111/Raami))
 
 ---
 
@@ -102,12 +102,8 @@ This project is licensed under the **MIT License**. See the [LICENSE.md](./LICEN
 
 If you have any questions or feedback, feel free to reach out:
 
-- 📧 **manasvithakkar@example.com**  
-- 📞 **+1 (123) 456-7890**
+- 📧 **mthakkar@northislandcollege.com**  
 
 ---
-
 We hope **Raami** transforms the way weddings are planned. Thank you for exploring our project! 🎉
 ```
-
-This version uses **headings**, **bold text**, and **code blocks** effectively to make the document easy to read and visually pleasing. Let me know if you'd like any further tweaks!
