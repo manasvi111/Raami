@@ -106,4 +106,3 @@ If you have any questions or feedback, feel free to reach out:
 
 ---
 We hope **Raami** transforms the way weddings are planned. Thank you for exploring our project! 🎉
-```
