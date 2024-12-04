@@ -65,7 +65,7 @@ Raami/
 
 ## Live Demo
 
-- **Live Link**: [Raami Live](https://your-live-project-link.com)  
+- **Live Link**: [Raami Live](https://dgl409.mthakkar.imgd.ca/)  
 - **GitHub Repository**: [Raami GitHub Repository](https://github.com/your-repo-link-here)
 
 ---
